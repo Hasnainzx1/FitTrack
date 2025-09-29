@@ -37,12 +37,12 @@ const page = () => {
       <div className="relative w-full max-w-2xl bg-black/40 backdrop-blur-xl rounded-3xl p-10 flex flex-col gap-6 text-white shadow-2xl border border-white/20">
 
         {/* Back Button */}
-        <button
+        {/* <button
           onClick={() => router.back()}
           className="flex items-center gap-2 text-[#e69202] hover:text-[#ffaa33] font-semibold mb-2"
         >
           <FaArrowLeft /> Back
-        </button>
+        </button> */}
 
         <h1 className="text-4xl font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-[#e69202] to-[#ffaa33] mb-6 drop-shadow-lg">
           Contact Now

@@ -32,8 +32,8 @@ const trainers = [
 const page = () => {
   return (
     <div
-    id="leaders"
-      className="w-screen h-screen relative flex flex-col items-center justify-start px-6 pt-20"
+      id="leaders"
+      className="w-full min-h-screen relative flex flex-col items-center justify-start px-4 sm:px-6 py-16 sm:py-20"
       style={{
         backgroundImage: "url('/Images/Tranbg.jpg')",
         backgroundSize: "cover",
@@ -44,12 +44,12 @@ const page = () => {
       <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/70 backdrop-blur-sm"></div>
 
       {/* Heading */}
-      <h1 className="relative text-white text-5xl md:text-6xl font-bold mb-12 z-10 text-center drop-shadow-lg">
+      <h1 className="relative text-white text-4xl sm:text-5xl md:text-6xl font-bold mb-8 sm:mb-12 z-10 text-center drop-shadow-lg">
         Meet Our Trainers
       </h1>
 
       {/* Trainers Grid */}
-      <div className="relative z-10 max-w-6xl w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+      <div className="relative z-10 max-w-6xl w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4">
         {trainers.map((trainer) => (
           <div
             key={trainer.id}
@@ -64,7 +64,7 @@ const page = () => {
 
             {/* Overlay Name */}
             <div className="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-              <h2 className="text-white text-2xl font-bold text-center">
+              <h2 className="text-white text-xl sm:text-2xl font-bold text-center">
                 {trainer.name}
               </h2>
             </div>
